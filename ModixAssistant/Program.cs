@@ -33,7 +33,7 @@ namespace ModixAssistant
 
             client.Log += LogHelper.Log;
 
-            //AI dependency injection
+            // Smart AI dependency injection
             var type = Assembly.GetExecutingAssembly()
                 .GetTypes()
                 .FirstOrDefault(d => typeof(IBot).IsAssignableFrom(d));
